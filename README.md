@@ -1,25 +1,27 @@
 <h1>Project Name</h1>
 Add a Favicon to Next.js SaaS tool - My Experience
 
-<h2>Project Description</h2>
-....
+<p>My experience adding a custom favicon to post2video (Next.js SaaS app). Documents the process of creating a B&W minimalist favicon using HTML + Chrome DevTools, why AI generation failed, and implementing it in Next.js App Router. Includes working example and step-by-step screenshots.</p>
 
 <h2>Motivation</h2>
-I need favicon for post2video
+  <p>I needed a custom favicon for my SaaS application, post2video, that matches its black & white minimalist branding.</p>
 
-questions
+  <p><strong>Questions explored:</strong></p>
+  <ul>
+    <li>Why favicon matters for SaaS apps</li>
+    <li>How to create favicon for Next.js App Router</li>
+    <li>Static vs dynamic: what to choose</li>
+    <li>Aligning favicon with post2video's B&W branding</li>
+  </ul>
 
-- why favicon
-- how to create favicon for next.js app router
-- next.js support static and dynamic : what to choose
-- post2video context => bw color branding
-
-All answerd in this project
+  <p>All answered in this project.</p>
 
 <h2>Key Takeaways</h2>
 <ul>
-    <li>...</li>
-   
+  <li><strong>AI image generation fails for exact dimensions:</strong> Tried ChatGPT first but couldn't get consistent 32x32px output - HTML + Chrome DevTools gives precise control for favicon creation</li>
+
+  <li><strong>Next.js App Router makes favicons trivial:</strong> Just place <code>favicon.ico</code> in the <code>app/</code> directory - no imports, no configuration, automatic detection</li>
+
 </ul>
 
 <h2>Concepts</h2>
@@ -229,33 +231,22 @@ how to create favicon for next.js app router => involves two separate steps:
 
 <h2>Demo</h2>
 
-open in browser
-<img src='./figs/open-in-browser.png'/>
+  <p>Open in browser</p>
+  <img src='./figs/open-in-browser.png' alt='Favicon template HTML opened in Chrome browser showing black background with white letter P'/>
 
-capture node screen shot
-<img src='./figs/capture-node-snapshot.png'/>
+  <p>Capture node screenshot</p>
+  <img src='./figs/capture-node-snapshot.png' alt='Chrome DevTools Elements tab with body tag right-clicked showing Capture node screenshot option'/>
 
-convert upload
-<img src='./figs/convert-upload.png'/>
+  <p>Convert upload</p>
+  <img src='./figs/convert-upload.png' alt='favicon.io converter page with PNG file uploaded for conversion to ICO format'/>
 
-now click download and you will get zip file 
-<img src='./figs/zip.png'>
+  <p>Now click download and you will get zip file</p>
+  <img src='./figs/zip.png' alt='Download button on favicon.io showing generated favicon.zip file ready to download'/>
 
-copied to data as favicon_io folder
-<img src='./figs/favicon-io-folder.png'/>
+  <p>Copied to data as favicon_io folder</p>
+  <img src='./figs/favicon-io-folder.png' alt='File explorer showing favicon_io folder inside data directory with converted favicon files'/>
 
-favicon.ico copied to app folder now run pnpm dev
-<img src='./figs/new-icon-in-adress-bar.png'/>
+  <p>favicon.ico copied to app folder, now run pnpm dev</p>
+  <img src='./figs/new-icon-in-adress-bar.png' alt='Browser address bar showing custom favicon (white P on black background) next to localhost:3000'/>
 
 
-<h2>Points of Interest</h2>
-<ul>
-    <li>...</li>
-   
-</ul>
-
-<h2>References</h2>
-<ul>
-    <li>...</li>
-   
-</ul>
