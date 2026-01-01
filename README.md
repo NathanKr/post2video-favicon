@@ -20,7 +20,7 @@ Add a Favicon to Next.js SaaS tool - My Experience
 <ul>
   <li><strong>AI image generation fails for exact dimensions:</strong> Tried ChatGPT first but couldn't get consistent 32x32px output - HTML + Chrome DevTools gives precise control for favicon creation</li>
 
-  <li><strong>Next.js App Router makes favicons trivial:</strong> Just place <code>favicon.ico</code> in the <code>app/</code> directory - no imports, no configuration, automatic detection</li>
+   <li><strong>Next.js App Router makes favicon serving trivial:</strong> Just place <code>favicon.ico</code> in the <code>app/</code> directory - no imports, no configuration, automatic detection</li>
 
 </ul>
 
