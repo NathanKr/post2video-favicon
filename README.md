@@ -36,7 +36,6 @@ All answerd in this project
 
 <strong>Note:</strong> Favicons don't improve your Google search ranking, but they do improve brand recognition and trust in search results.
 
-
 <h3>Why Multiple Icon Sizes?</h3>
   <ul>
     <li><strong>Browser tab vs Phone app icon:</strong>
@@ -87,23 +86,21 @@ All answerd in this project
     </li>
   </ul>
 
-
 <h2>Installation</h2>
 
  <p>To see the working example:</p>
 
-  ```bash
-  pnpm install
-  ```
-
+```bash
+pnpm install
+```
 
 <h2>Usage</h2>
 
  <h3>Run the Example App</h3>
 
-  ```bash
-  pnpm dev
-  ```
+```bash
+pnpm dev
+```
 
   <p>Open http://localhost:3000 and check the browser tab for the favicon.</p>
 
@@ -124,20 +121,12 @@ All answerd in this project
     <li>Chrome saves a perfect 32x32px PNG file to your Downloads folder (see <code>data/favicon-template.png</code> for expected result)</li>
   </ol>
 
-  <h4>1.3 Convert PNG to ICO</h4>
-  <p>Convert the PNG screenshot to ICO format:</p>
-  <ul>
-    <li><a href="https://favicon.io/favicon-converter/" target="_blank">favicon.io converter</a> (recommended - simple upload)</li>
-    <li><a href="https://realfavicongenerator.net/" target="_blank">RealFaviconGenerator</a></li>
-    <li>Or use ImageMagick command line: <code>convert favicon.png favicon.ico</code></li>
-  </ul>
-  <p>Download the generated <code>favicon.ico</code> file.</p>
+<h4>1.3 Convert PNG to ICO</h4>
+  <p>I used <a href="https://favicon.io/favicon-converter/">favicon.io converter</a> - simple upload and download.</p>
 
   <h4>Step 2: Add to Next.js App Router</h4>
 
   <p>Place <code>favicon.ico</code> in the <code>app/</code> directory. Next.js automatically detects and serves it - no configuration needed.</p>
-
-
 
 <h2>Technologies Used</h2>
 next.js 16x app router
@@ -160,7 +149,6 @@ next.js 16x app router
     <li>Text-only, no graphics - maintains B&W minimalist consistency</li>
     <li>Centered, generous whitespace - professional look</li>
   </ul>
-
 
 how to create favicon for next.js app router => involves two separate steps:
 
@@ -247,9 +235,11 @@ open in browser
 capture node screen shot
 <img src='./figs/capture-node-snapshot.png'/>
 
+convert upload
+<img src='./figs/convert-upload.png'/>
 
-
-
+now click download and you will get zip file (copied to data as favicon_io folder)
+<img src='./figs/zip.png'>
 
 <h2>Points of Interest</h2>
 <ul>
