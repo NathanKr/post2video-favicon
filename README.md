@@ -238,8 +238,15 @@ capture node screen shot
 convert upload
 <img src='./figs/convert-upload.png'/>
 
-now click download and you will get zip file (copied to data as favicon_io folder)
+now click download and you will get zip file 
 <img src='./figs/zip.png'>
+
+copied to data as favicon_io folder
+<img src='./figs/favicon-io-folder.png'/>
+
+favicon.ico copied to app folder now run pnpm dev
+<img src='./figs/new-icon-in-adress-bar.png'/>
+
 
 <h2>Points of Interest</h2>
 <ul>
