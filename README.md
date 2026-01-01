@@ -55,6 +55,38 @@ All answerd in this project
     </li>
   </ul>
 
+   <h3>Static vs Dynamic Favicons</h3>
+  <ul>
+    <li><strong>Static favicon (most common):</strong>
+      <ul>
+        <li>Fixed image file(s) created beforehand - can be one (just favicon.ico) or many (favicon.ico + apple-icon.png + icon-192.png for different sizes)</li>
+        <li>Same icon for everyone, all the time</li>
+        <li>Use when: Logo/branding doesn't change</li>
+      </ul>
+    </li>
+    <li><strong>Dynamic favicon (advanced use cases):</strong>
+      <ul>
+        <li>Favicon changes based on user state or data</li>
+        <li>Generated programmatically with code (icon.tsx using ImageResponse API)</li>
+        <li>Use when:
+          <ul>
+            <li>Showing unread counts (Gmail shows "(3)" in favicon for 3 unread emails)</li>
+            <li>Status indicators (Slack shows green dot when online, gray when away)</li>
+            <li>User personalization (show user's initials or avatar in tab)</li>
+            <li>Multi-tenant SaaS (different logo per customer/organization)</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><strong>Why post2video uses static:</strong>
+      <ul>
+        <li>Logo is fixed branding - doesn't change</li>
+        <li>No user state to display in favicon (no unread counts, status, etc.)</li>
+        <li>One brand for all users</li>
+      </ul>
+    </li>
+  </ul>
+
 
 <h2>Installation</h2>
 ....
@@ -137,7 +169,7 @@ how to create favicon for next.js app router => involves two separate steps:
       <td><code>app/layout.tsx</code></td>
       <td>Metadata API with icons object</td>
       <td>Multiple icon sizes, full control over metadata</td>
-      <td>❌ Overkill for single favicon</td>
+      <td>❌ Only need one simple favicon, not multiple sizes</td>
     </tr>
         <tr>
       <td><code>app/favicon.ico</code></td>
