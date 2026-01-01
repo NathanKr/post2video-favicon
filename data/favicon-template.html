@@ -4,6 +4,7 @@
     <style>
       body {
         margin: 0;
+        padding: 0;
         width: 32px;
         height: 32px;
         background: black;
@@ -13,10 +14,11 @@
       }
       .icon {
         font-family: 'Courier New', monospace;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         color: white;
-        letter-spacing: -1px;
+        line-height: 1;  /* ← Reduce line-height */
+        margin-top: -2px; /* ← Fine-tune vertical position */
       }
     </style>
   </head>

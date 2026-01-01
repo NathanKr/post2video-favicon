@@ -115,15 +115,23 @@ All answerd in this project
 
   <p>See <code>data/favicon-template.html</code> for the HTML template used to create the favicon.</p>
 
-  <p><strong>1.2 Screenshot with Chrome DevTools</strong></p>
+<h4>1.2 Screenshot with Chrome DevTools</h4>
   <ol>
-    <li>Open <code>data/favicon-template.html</code> in Chrome</li>
+    <li>Open <code>data/favicon-template.html</code> in Chrome (the HTML has a fixed 32x32px body)</li>
     <li>Open DevTools (F12 or right-click → Inspect)</li>
-    <li>Toggle device toolbar (Ctrl+Shift+M or Cmd+Shift+M on Mac)</li>
-    <li>Set viewport dimensions to exactly 32x32 pixels</li>
-    <li>Capture screenshot: DevTools menu (⋮) → Capture screenshot</li>
-    <li>Save as <code>favicon.ico</code></li>
+    <li>In the Elements tab, right-click on <code>&lt;body&gt;</code> tag</li>
+    <li>Select "Capture node screenshot"</li>
+    <li>Chrome saves a perfect 32x32px PNG file to your Downloads folder (see <code>data/favicon-template.png</code> for expected result)</li>
   </ol>
+
+  <h4>1.3 Convert PNG to ICO</h4>
+  <p>Convert the PNG screenshot to ICO format:</p>
+  <ul>
+    <li><a href="https://favicon.io/favicon-converter/" target="_blank">favicon.io converter</a> (recommended - simple upload)</li>
+    <li><a href="https://realfavicongenerator.net/" target="_blank">RealFaviconGenerator</a></li>
+    <li>Or use ImageMagick command line: <code>convert favicon.png favicon.ico</code></li>
+  </ul>
+  <p>Download the generated <code>favicon.ico</code> file.</p>
 
   <h4>Step 2: Add to Next.js App Router</h4>
 
@@ -232,7 +240,16 @@ how to create favicon for next.js app router => involves two separate steps:
 ....
 
 <h2>Demo</h2>
-....
+
+open in browser
+<img src='./figs/open-in-browser.png'/>
+
+capture node screen shot
+<img src='./figs/capture-node-snapshot.png'/>
+
+
+
+
 
 <h2>Points of Interest</h2>
 <ul>
