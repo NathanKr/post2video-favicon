@@ -131,7 +131,10 @@ pnpm dev
   <p>Place <code>favicon.ico</code> in the <code>app/</code> directory. Next.js automatically detects and serves it - no configuration needed.</p>
 
 <h2>Technologies Used</h2>
-next.js 16x app router
+  <ul>
+    <li>Next.js 15 (App Router)</li>
+    <li>pnpm</li>
+  </ul>
 
 <h2>Design</h2>
 
@@ -152,8 +155,8 @@ next.js 16x app router
     <li>Centered, generous whitespace - professional look</li>
   </ul>
 
-how to create favicon for next.js app router => involves two separate steps:
-
+<h3>Implementation Options</h3>
+  <p>Creating and implementing a favicon involves two separate steps:</p>
  <h3>1. Creating the favicon image file (general - works for any website)</h3>
 
   <table>
@@ -227,7 +230,42 @@ how to create favicon for next.js app router => involves two separate steps:
   </table>
 
 <h2>Code Structure</h2>
-....
+
+<h3>Favicon Template HTML</h3>
+
+  <p>The core of the favicon creation - <code>data/favicon-template.html</code>:</p>
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .icon {
+        font-family: 'Courier New', monospace;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        line-height: 1;
+        margin-top: -2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="icon">p</div>
+  </body>
+  </html>
+```
 
 <h2>Demo</h2>
 
@@ -248,5 +286,3 @@ how to create favicon for next.js app router => involves two separate steps:
 
   <p>favicon.ico copied to app folder, now run pnpm dev</p>
   <img src='./figs/new-icon-in-adress-bar.png' alt='Browser address bar showing custom favicon (white P on black background) next to localhost:3000'/>
-
-
