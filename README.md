@@ -1,17 +1,14 @@
 <h1>Project Name</h1>
 Add a Favicon to Next.js SaaS tool - My Experience
 
-
-
 <h2>Project Description</h2>
 ....
-
-
 
 <h2>Motivation</h2>
 I need favicon for post2video
 
 questions
+
 - why favicon
 - how to create favicon for next.js app router
 - next.js support static and dynamic : what to choose
@@ -37,24 +34,38 @@ All answerd in this project
       <li><strong>Better user experience</strong> - Appears in browser tabs, bookmarks, history, and iOS/Android home screen shortcuts</li>
   </ul>
 
-  <strong>Note:</strong> Favicons don't improve your Google search ranking, but they do improve brand recognition and trust in search results.
+<strong>Note:</strong> Favicons don't improve your Google search ranking, but they do improve brand recognition and trust in search results.
 
+
+<h3>Why Multiple Icon Sizes?</h3>
+  <ul>
+    <li><strong>Browser tab vs Phone app icon:</strong>
+      <ul>
+        <li><strong>Browser tabs:</strong> 16x16 or 32x32 favicon.ico (works everywhere - desktop, iPhone, Android)</li>
+        <li><strong>iPhone "Add to Home Screen":</strong> 180x180 apple-touch-icon (website icon on iPhone home screen next to Instagram, Gmail, etc.)</li>
+        <li><strong>Android "Add to Home Screen":</strong> 192x192 icon (website icon on Android home screen)</li>
+        <li><strong>Progressive Web Apps (PWAs):</strong> Multiple sizes (192x192, 512x512) for installable apps on both iPhone and Android</li>
+      </ul>
+    </li>
+    <li><strong>Post2video only needs favicon.ico:</strong>
+      <ul>
+        <li>Browser-based web app (users visit via URL on any device)</li>
+        <li>No "Add to Home Screen" or installation feature</li>
+      </ul>
+    </li>
+  </ul>
 
 
 <h2>Installation</h2>
 ....
 
-
 <h2>Usage</h2>
 ....
-
 
 <h2>Technologies Used</h2>
 next.js 16x app router
 
-
 <h2>Design</h2>
-
 
 <h3>Design Constraints</h3>
   <ul>
@@ -62,7 +73,6 @@ next.js 16x app router
     <li><strong>Target audience:</strong> Developer-bloggers, technical creators</li>
     <li><strong>Solo developer priority:</strong> Simple, maintainable solutions</li>
   </ul>
-
 
 how to create favicon for next.js app router => involves two separate steps:
 
@@ -138,7 +148,6 @@ how to create favicon for next.js app router => involves two separate steps:
 
   </table>
 
-
 <h2>Code Structure</h2>
 ....
 
@@ -156,4 +165,3 @@ how to create favicon for next.js app router => involves two separate steps:
     <li>...</li>
    
 </ul>
-
