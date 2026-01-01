@@ -91,8 +91,39 @@ All answerd in this project
 <h2>Installation</h2>
 ....
 
-<h2>Usage</h2>
-....
+ <h2>Usage</h2>
+
+  <h3>Step 1: Create the Favicon with HTML + Chrome DevTools</h3>
+
+  <h4>1.1 Create HTML file with your design</h4>
+
+  <p>See <code>data/favicon-template.html</code> for the HTML template used to create the favicon.</p>
+
+  <h4>1.2 Screenshot with Chrome DevTools</h4>
+  <ol>
+    <li>Open <code>data/favicon-template.html</code> in Chrome</li>
+    <li>Open DevTools (F12 or right-click → Inspect)</li>
+    <li>Toggle device toolbar (Ctrl+Shift+M or Cmd+Shift+M on Mac)</li>
+    <li>Set viewport dimensions to exactly 32x32 pixels</li>
+    <li>Capture screenshot: DevTools menu (⋮) → Capture screenshot</li>
+    <li>Save as <code>favicon.ico</code></li>
+  </ol>
+
+  <h3>Step 2: Add to Next.js App Router</h3>
+
+  <ol>
+    <li>Place <code>favicon.ico</code> in the <code>app/</code> directory of your Next.js project</li>
+    <li>That's it! Next.js automatically detects and serves it - no code needed</li>
+  </ol>
+
+  <p><strong>File structure:</strong></p>
+  <pre><code>app/
+    ├── favicon.ico  ← Your favicon here
+    ├── layout.tsx
+    └── page.tsx
+  </code></pre>
+
+  <p><strong>Note:</strong> Next.js App Router auto-detects favicon.ico in the app directory. No imports or metadata configuration required.</p>
 
 <h2>Technologies Used</h2>
 next.js 16x app router
@@ -105,6 +136,17 @@ next.js 16x app router
     <li><strong>Target audience:</strong> Developer-bloggers, technical creators</li>
     <li><strong>Solo developer priority:</strong> Simple, maintainable solutions</li>
   </ul>
+
+<h3>Favicon Design Choices</h3>
+  <p>Specific design choices for the favicon matching post2video branding:</p>
+  <ul>
+    <li>Black background, white text (matches website branding)</li>
+    <li>Monospace font (Courier New) - technical/developer aesthetic</li>
+    <li>Single letter "P" - simple, readable at 32x32px, easy to spot in browser tabs</li>
+    <li>Text-only, no graphics - maintains B&W minimalist consistency</li>
+    <li>Centered, generous whitespace - professional look</li>
+  </ul>
+
 
 how to create favicon for next.js app router => involves two separate steps:
 
