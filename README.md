@@ -89,17 +89,33 @@ All answerd in this project
 
 
 <h2>Installation</h2>
-....
 
- <h2>Usage</h2>
+ <p>To see the working example:</p>
 
-  <h3>Step 1: Create the Favicon with HTML + Chrome DevTools</h3>
+  ```bash
+  pnpm install
+  ```
 
-  <h4>1.1 Create HTML file with your design</h4>
+
+<h2>Usage</h2>
+
+ <h3>Run the Example App</h3>
+
+  ```bash
+  pnpm dev
+  ```
+
+  <p>Open http://localhost:3000 and check the browser tab for the favicon.</p>
+
+  <h3>Create Your Own Favicon</h3>
+
+  <h4>Step 1: Create the Favicon with HTML + Chrome DevTools</h4>
+
+  <p><strong>1.1 Create HTML file with your design</strong></p>
 
   <p>See <code>data/favicon-template.html</code> for the HTML template used to create the favicon.</p>
 
-  <h4>1.2 Screenshot with Chrome DevTools</h4>
+  <p><strong>1.2 Screenshot with Chrome DevTools</strong></p>
   <ol>
     <li>Open <code>data/favicon-template.html</code> in Chrome</li>
     <li>Open DevTools (F12 or right-click → Inspect)</li>
@@ -109,21 +125,11 @@ All answerd in this project
     <li>Save as <code>favicon.ico</code></li>
   </ol>
 
-  <h3>Step 2: Add to Next.js App Router</h3>
+  <h4>Step 2: Add to Next.js App Router</h4>
 
-  <ol>
-    <li>Place <code>favicon.ico</code> in the <code>app/</code> directory of your Next.js project</li>
-    <li>That's it! Next.js automatically detects and serves it - no code needed</li>
-  </ol>
+  <p>Place <code>favicon.ico</code> in the <code>app/</code> directory. Next.js automatically detects and serves it - no configuration needed.</p>
 
-  <p><strong>File structure:</strong></p>
-  <pre><code>app/
-    ├── favicon.ico  ← Your favicon here
-    ├── layout.tsx
-    └── page.tsx
-  </code></pre>
 
-  <p><strong>Note:</strong> Next.js App Router auto-detects favicon.ico in the app directory. No imports or metadata configuration required.</p>
 
 <h2>Technologies Used</h2>
 next.js 16x app router
