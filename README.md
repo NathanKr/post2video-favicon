@@ -132,7 +132,7 @@ pnpm dev
 
 <h2>Technologies Used</h2>
   <ul>
-    <li>Next.js 15 (App Router)</li>
+    <li>Next.js App Router</li>
     <li>pnpm</li>
   </ul>
 
