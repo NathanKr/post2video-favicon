@@ -15,7 +15,6 @@ Add a Favicon to Next.js SaaS tool - My Experience
     <li>Aligning favicon with post2video's B&W branding</li>
   </ul>
 
-  <p>All answered in this project.</p>
 
 <h2>Key Takeaways</h2>
 <ul>
