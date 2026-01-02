@@ -1,6 +1,7 @@
 <h1>Project Name</h1>
 Add a Favicon to Next.js SaaS tool - My Experience
 
+<h2>Project Description</h2>
 <p>My experience adding a custom favicon to post2video (Next.js SaaS app). Documents the process of creating a B&W minimalist favicon using HTML + Chrome DevTools, why AI generation failed, and implementing it in Next.js App Router. Includes working example and step-by-step screenshots.</p>
 
 <h2>Motivation</h2>
