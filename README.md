@@ -24,7 +24,8 @@ Add a Favicon to Next.js SaaS tool - My Experience
   <li><strong>Favicon must match product branding:</strong> Black & white minimalist design reinforces post2video's brand identity - mismatched colors would confuse users</li>
 </ul>
 
-<h2>Concepts</h2>
+<h2>Favicon Basics</h2>
+  <p>Essential favicon concepts and decisions covered below.</p>
 
   <h3>What is a Favicon?</h3>
   A favicon is a small icon that represents a website, appearing in browser tabs, bookmarks, and search results.
@@ -90,7 +91,7 @@ Add a Favicon to Next.js SaaS tool - My Experience
 
 <h2>Installation</h2>
 
- <p>To see the working example:</p>
+ <p>Install dependencies for the example Next.js app:</p>
 
 ```bash
 pnpm install
@@ -98,7 +99,7 @@ pnpm install
 
 <h2>Usage</h2>
 
- <h3>Run the Example App</h3>
+ <p>Run the Example App</p>
 
 ```bash
 pnpm dev
@@ -138,6 +139,8 @@ pnpm dev
 
 <h2>Design</h2>
 
+  <p>This section covers the design constraints, favicon choices, and implementation options evaluated for post2video.</p>        
+  
 <h3>Design Constraints</h3>
   <ul>
     <li><strong>Brand identity:</strong> Black & white minimalist aesthetic</li>
@@ -231,9 +234,7 @@ pnpm dev
 
 <h2>Code Structure</h2>
 
-<h3>Favicon Template HTML</h3>
-
-  <p>The core of the favicon creation - <code>data/favicon-template.html</code>:</p>
+<p>The core of the favicon creation - <code>data/favicon-template.html</code>:</p>
 
 ```html
 <!DOCTYPE html>
