@@ -50,7 +50,7 @@ Add a Favicon to Next.js SaaS tool - My Experience
     </li>
     <li><strong>Post2video only needs favicon.ico:</strong>
       <ul>
-        <li>Browser-based web app (users visit via URL on any device)</li>
+        <li>Browser-based web app - no Android/iPhone app, no PWA (users visit via URL on any device)</li>
         <li>No "Add to Home Screen" or installation feature</li>
       </ul>
     </li>
@@ -235,9 +235,9 @@ pnpm dev
 
   <p>The core of the favicon creation - <code>data/favicon-template.html</code>:</p>
 
-  ```html
-  <!DOCTYPE html>
-  <html>
+```html
+<!DOCTYPE html>
+<html>
   <head>
     <style>
       body {
@@ -252,7 +252,7 @@ pnpm dev
         overflow: hidden;
       }
       .icon {
-        font-family: 'Courier New', monospace;
+        font-family: "Courier New", monospace;
         font-size: 20px;
         font-weight: bold;
         color: white;
@@ -264,7 +264,7 @@ pnpm dev
   <body>
     <div class="icon">p</div>
   </body>
-  </html>
+</html>
 ```
 
 <h2>Demo</h2>
@@ -287,6 +287,10 @@ pnpm dev
   <p>favicon.ico copied to app folder, now run pnpm dev</p>
   <img src='./figs/new-icon-in-adress-bar.png' alt='Browser address bar showing custom favicon (white P on black background) next to localhost:3000'/>
 
+<h2>Points of Interest</h2>
+    <ul>
+      <li><strong>Mobile browsers aggressively cache favicons:</strong> If you update your favicon and don't see changes on mobile, you need to clear browser cache/website data - a simple refresh won't work.</li>
+    </ul>
 
 <h2>References</h2>
     <ul>
