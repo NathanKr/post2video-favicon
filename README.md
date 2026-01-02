@@ -286,3 +286,11 @@ pnpm dev
 
   <p>favicon.ico copied to app folder, now run pnpm dev</p>
   <img src='./figs/new-icon-in-adress-bar.png' alt='Browser address bar showing custom favicon (white P on black background) next to localhost:3000'/>
+
+
+<h2>References</h2>
+    <ul>
+      <li><a href="https://favicon.io/favicon-converter/">favicon.io Converter</a> - PNG to ICO conversion tool</li>
+      <li><a href="https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons">Next.js Favicon Documentation</a> - Official Next.js icon conventions</li>
+      <li><a href="https://www.post2video.com">post2video</a> - Live implementation of this favicon</li>
+    </ul>
