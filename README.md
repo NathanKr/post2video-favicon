@@ -108,7 +108,8 @@ pnpm dev
   <p>Open http://localhost:3000 and check the browser tab for the favicon.</p>
 
   <h3>Create Your Own Favicon</h3>
-
+  <p>Step-by-step process for creating your favicon.</p>
+  
   <h4>Step 1: Create the Favicon with HTML + Chrome DevTools</h4>
 
   <p><strong>1.1 Create HTML file with your design</strong></p>
